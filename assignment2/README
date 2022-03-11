@@ -1,0 +1,39 @@
+**********************************************************************
+README: CSE 438 Assignment2
+Created by: Dhruv Koulgi
+ASU ID: 1215574243
+**********************************************************************
+
+HOW TO USE:
+
+The application accepts the following commands:
+
+	rgb x y z		where x, y, and z are integers between 0-100
+	dist n mode		where n is an integer > 0, mode = 0 or 1
+	exit			exits the application
+
+HOW TO MAKE:
+	
+main:
+1)	loop through inputs
+2)	for each input identify function to perform
+3)	if rgb: execute rgb function
+4)	if dist: execute dist function
+5)	if exit: close all files, exit
+rgb:
+
+1)	export pwm
+2)	set pwm period
+3)	set pwm duty cycle
+4)	enable pwm
+5)	run led sequence
+6)	disable pwm
+
+dist:
+	
+1)	read number of measurements (n)
+2)	set pins
+3)	setup clock
+4)	send ping
+5)	calculate distance = (pulse width * ultrasonic spreading velocity) / 2
+

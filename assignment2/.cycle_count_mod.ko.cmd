@@ -1,0 +1,1 @@
+cmd_/home/pi/assignment2/cycle_count_mod.ko := ld -r -EL --build-id=sha1  -T scripts/module.lds -o /home/pi/assignment2/cycle_count_mod.ko /home/pi/assignment2/cycle_count_mod.o /home/pi/assignment2/cycle_count_mod.mod.o;  true
